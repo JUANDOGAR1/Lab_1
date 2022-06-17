@@ -11,18 +11,18 @@ using namespace std;
 
 int main()
 {
-    int a=1,b=1,c,num,sumPar;
+    int a=1,b=1,c=0,num,sumPar=0;
     cout<<"Ingresar numero: ";
     cin>>num;
     
-    while (B<=num){
-        c=a+B;
+    while (b<=num){
+        c=a+b;
         a=b;
         b=c;
         
         if (b%2==0){
             if (b<num){
-                numPar+=b;
+                sumPar+=b;
             }
         }
     }
