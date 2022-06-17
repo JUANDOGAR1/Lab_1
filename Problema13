@@ -1,0 +1,31 @@
+/*Problema 13. Escriba un programa que reciba un número y calcule la suma de todos los primos
+menores que el número ingresado.
+Ej: Si se recibe 10 el programa debe imprimir 17.
+Nota: la salida del programa debe ser: El resultado de la suma es: 17.*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,primo=1,sumPrim=0;
+    cout<<"Ingrese el numero: ";
+    cin>>n;
+    
+    while (primo<n){
+        int divisor=0;
+        for (int i=2,i<=primo,i++){
+            if (primo%i=0){
+                divisores++
+            }
+        }
+        divisores++
+        if (divisores==2){
+            sumPrim+=primo
+        }
+        primo++
+    }
+    cout<<"El resultado de la suma es: "sumPrim;
+    return 0;
+}
