@@ -22,7 +22,7 @@ int main()
         sum=sum+aux;
         n=n/10;
     }
-    cout<<"El resultado de la suma es: "<<aux
+    cout<<"El resultado de la suma es: "<<sum;
     
     return 0;
 }
