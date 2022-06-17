@@ -14,18 +14,18 @@ int main()
     cin>>n;
     
     while (primo<n){
-        int divisor=0;
-        for (int i=2,i<=primo,i++){
-            if (primo%i=0){
-                divisores++
+        int divisores=0;
+        for (int i=2;i<=primo;i++){
+            if (primo%i==0){
+                divisores++;
             }
         }
-        divisores++
+        divisores++;
         if (divisores==2){
-            sumPrim+=primo
+            sumPrim+=primo;
         }
-        primo++
+        primo++;
     }
-    cout<<"El resultado de la suma es: "sumPrim;
+    cout<<"El resultado de la suma es: "<<sumPrim;
     return 0;
 }
