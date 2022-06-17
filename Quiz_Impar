@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Ingrese un numero impar: ";
+    int n=0,cont=0,espiral=1,a=1;
+    cin>>n;
+    int aux=(n/2);
+    while (aux>cont){
+        cont++;
+        if (cont==1){
+            for (int i=1;i<=4;i++){
+                a = a+2; 
+                espiral = espiral + a;
+            }
+        }
+        else if (cont==2){
+            for (int i=1;i<=4;i++){
+                a = a+4; 
+                espiral = espiral + a;
+            }
+        }
+        else if (cont==3){
+            for (int i=1;i<=4;i++){
+                a = a+6; 
+                espiral = espiral + a;
+            }
+        }
+        else if (cont==4){
+            for (int i=1;i<=4;i++){
+                a = a+8; 
+                espiral = espiral + a;
+            }
+        }
+    }    
+    cout<<espiral;
+    return 0;
+}
